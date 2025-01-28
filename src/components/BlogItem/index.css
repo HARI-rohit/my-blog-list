@@ -1,0 +1,93 @@
+/* .con: Card container with animation on hover */
+.con {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ffffff; /* Default white background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to slightly lift the card, add color, and enhanced shadow */
+.con:hover {
+  transform: translateY(-5px); /* Lifts the card when hovered */
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better focus */
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* Blog image (img3) */
+.img3 {
+  height: 200px;
+  width: 400px;
+  margin: 5px;
+  object-fit: cover;
+  border-radius: 5px; /* Optional: rounded corners for the image */
+  animation: fadeIn 0.8s ease-out; /* Fades in the image */
+}
+
+/* Avatar image (img2) */
+.img2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.img2:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* List item (li) */
+li {
+  list-style-type: none;
+  margin: 20px;
+  animation: slideIn 0.5s ease-out; /* Slide-in animation for list items */
+}
+
+/* Container for the author and avatar (con3) */
+.con3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: fadeIn 0.8s ease-out; /* Fades in the author section */
+}
+
+/* Link styles */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Paragraph (pa1) */
+.pa1 {
+  color: gray;
+}
+
+/* Heading (he1) */
+.he1 {
+  color: black;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
